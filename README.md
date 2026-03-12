@@ -69,3 +69,16 @@
              - APK (É o formato de arquivo do android, igual ao .exe do windows)
         - fluter run -v
             - build do app (APK)
+
+
+    # Depêndencias = Biblioteca
+
+        - O pubget é como se fosse o pip install do Python
+            - Instalação
+                - flutter pub add nome_dependencia
+            - Baixar e instalar dependências projetadas
+                - flutter pub get
+            - outros comandos do flutter pub (dependências)
+                - flutter pub outdated (verifica se as dependências estão desatualizadas)
+                - fluter pub apgrade (atualiza as dependências do flutter pub)
+                

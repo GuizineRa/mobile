@@ -106,3 +106,12 @@
         Janelas --> Scaffold         
 
 ```      
+#### Tipos de Janelas
+
+- StateLess:
+    Janelas Imutáveis - Uma vez construida ela não se altera
+    obs: Pode Ter Movimento: (GIF, Movies, Carrossel, Cards) Mas não consigo alterar as imagens, os vídeos e os elementos de ovimento depois de montados
+
+    -  StateFull:
+        janelas que permitem Mudança de Estado(SetState)
+        obs: Permite Adicionar elementos a Janela, Como novasa Imagens, Novos Textos entre outros.

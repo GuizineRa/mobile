@@ -15,7 +15,7 @@ void main(List<String> args) {
 class ToDoList extends StatefulWidget {
   const ToDoList({super.key});
 
-  @override
+  @override // chama o rebuild da Tela
   State<ToDoList> createState() => _ToDoListState();
 }
 
@@ -62,9 +62,15 @@ class _ToDoListState extends State<ToDoList> {
                     ),),
                     leading: Checkbox( //permite mudar o valor da tarefa para concluida ou o contrário
                       value: _tarefas[index]["concluida"], 
-                      onChanged: (bool? valor)=> setState(() {
+                      onChanged: (bool? valor)=> setState(() { //chamando a mudança de estado
                         _tarefas[index]["concluida"] = valor!;
                       })),
+                    // coloquem um icone( de lixeira), ao ser clicado vai deletar a tarefa
+                    //usar o trailing para colocar o icone da lixeira 
+                    trailing: IconButton(
+                      onPressed: () => _deletarTarefa(index),
+                      icon: Icon(Icons.delete)
+                    ),
                   )
               )
             )
@@ -75,12 +81,18 @@ class _ToDoListState extends State<ToDoList> {
   //método para adicionar tarefa na lista
   void _adicionarTarefa() {
     if(_tarefaController.text.trim().isNotEmpty){
-      setState(() {
-        //Adiciona a tarefa na lista
+      setState(() { // chama a mudança de estado da janela 
+        //adiciona a tarefa na lista
         _tarefas.add({"titulo":_tarefaController.text,"concluida":false});
         //limpa o campo do input
         _tarefaController.clear();
       });
     }
+  }
+
+  void _deletarTarefa(int index){
+    setState(() {
+        _tarefas.removeAt(index);
+    });
   }
 }

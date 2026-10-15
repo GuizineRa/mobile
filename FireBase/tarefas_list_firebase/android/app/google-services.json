@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "335406530990",
+    "project_id": "tarefaslistguizinera",
+    "storage_bucket": "tarefaslistguizinera.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335406530990:android:49b6da8d099dc7c084883f",
+        "android_client_info": {
+          "package_name": "com.example.tarefas_list_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335406530990-fo36fjlhvqmu0kgckinaqpb5nr6ev8d0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_DS48YS99pcp7elzzVVbvu0sErRgOvjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335406530990-fo36fjlhvqmu0kgckinaqpb5nr6ev8d0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
